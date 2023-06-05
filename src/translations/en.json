@@ -1,4 +1,34 @@
 {
+
+    "homeheader" :{
+        "speciality":"Specialist",
+        "searchdoctor": "Find a doctor by specialty",
+
+        "healthfacilities" : "Health facilities",
+        "selectroom" : "Select clinic hospital",
+
+        "doctor" : "Doctor",
+        "selectdoctor": "Choose a good doctor",
+
+        "fee" : "Examination package",
+        "checkhealth":"General health check",
+
+        "support": "Support"
+    },
+
+    "banner" : {
+        "title1" : "HEALTH FOUNDATION",
+        "title2" : "COMPREHENSIVE HEALTH CARE",
+
+        "child1" : "Specialist Examination",
+        "child2" : "Remote Examination",
+        "child3" : "General Examination",
+        "child4" : "Medical Test",
+        "child5" : "Mental Health",
+        "child6" : "Dental Health"
+
+    },
+
     "common": {
         "add": "Add",
         "edit": "Edit",
