@@ -8,6 +8,8 @@ import HandBook from './Section/HandBook';
 import './HomePage.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import About from './Section/About';
+import HomeFooter from './HomeFooter';
 
 class HomePage extends Component {
 
@@ -35,6 +37,8 @@ class HomePage extends Component {
                 <HandBook
                     settings={settings}
                 />
+                <About />
+                <HomeFooter />
             </div>
         );
     }
