@@ -35,5 +35,19 @@
             "handbook": "Cam Nang",
             "manage-handbook": "Quan ly Cam Nang"
         }
+    },
+    "manage-user" : {
+        "add": "Thêm mới người dùng",
+        "email": "Email",
+        "password": "Mật khẩu",
+        "firstname": "First Name",
+        "lastname": "Last Name",
+        "address": "Địa chỉ",
+        "phone": "Điện thoại",
+        "gender": "Giới tính",
+        "position": "Chức danh",
+        "role": "Vai trò",
+        "image": "Ảnh đại diện",
+        "save": "Lưu người dùng"
     }
 }
