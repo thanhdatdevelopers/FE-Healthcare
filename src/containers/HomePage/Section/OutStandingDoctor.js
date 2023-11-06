@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Slider from "react-slick";
 import * as actions from "../../../store/actions"
 import { LANGUAGES } from "../../../utils"
+import { FormattedMessage } from 'react-intl';
 
 class OutStandingDoctor extends Component {
   constructor(props) {
@@ -27,13 +28,16 @@ class OutStandingDoctor extends Component {
   render() {
     let arrDoctors = this.state.arrDoctors;
     let { language } = this.props;
-    arrDoctors = arrDoctors.concat(arrDoctors).concat(arrDoctors)
     return (
       <div className='section-share section-outstanding-doctor'>
         <div className='section-container'>
           <div className='section-header'>
-            <span className='title-section'>Bác sĩ nổi bật tuần qua</span>
-            <button className='btn-section'>Xem thêm</button>
+            <span className='title-section'>
+              <FormattedMessage id={"homepage.out-standing-doctor"} />
+            </span>
+            <button className='btn-section'>
+              <FormattedMessage id={"homepage.more-info"} />
+            </button>
           </div>
 
           <div className='section-body'>
@@ -44,8 +48,8 @@ class OutStandingDoctor extends Component {
                   if (item.image) {
                     imageBase64 = new Buffer(item.image, 'base64').toString('binary')
                   }
-                  let nameVi = `${item.positionData.valueVi}, ${item.lastName}, ${item.firstName}`;
-                  let nameEn = `${item.positionData.valueEn}, ${item.firstName}, ${item.lastName}`;
+                  let nameEn = `${item.positionData.valueVi}, ${item.lastName} ${item.firstName}`;
+                  let nameVi = `${item.positionData.valueEn}, ${item.firstName} ${item.lastName}`;
                   return (
                     <div className='section-customize' key={index}>
                       <div className='customize-border'>

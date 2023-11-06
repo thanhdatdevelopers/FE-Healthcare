@@ -50,5 +50,9 @@
         "role": "Role",
         "save": "Save user",
         "edit": "Save edit"
+    },
+    "homepage" : {
+        "out-standing-doctor": "Doctor featured last week",
+        "more-info": "More Infor"
     }
 }
