@@ -34,6 +34,9 @@
             "manage-specialty": "Quan ly Chuyen Khoa",
             "handbook": "Cam Nang",
             "manage-handbook": "Quan ly Cam Nang"
+        },
+        "doctor": {
+            "manage-schedule": "Quản lý kế hoạch khám bệnh"
         }
     },
     "manage-user" : {
