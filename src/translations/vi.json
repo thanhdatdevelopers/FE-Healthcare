@@ -78,7 +78,13 @@
             "select-doctor": "Chọn bác sĩ",
             "intro": "Thông tin giới thiệu", 
             "save": "Lưu thông tin",
-            "add": "Tạo thông tin"
+            "add": "Tạo thông tin",
+            "price": "Giá khám bệnh",
+            "payment": "Phương thức thanh toán",
+            "province": "Tỉnh thành",
+            "name-room": "Tên phòng khám",
+            "address-room": "Địa chỉ phòng khám",
+            "note": "Chi chú"
         }
     }
 }
