@@ -3,7 +3,10 @@
     display: flex;
 
     .content-left {
-      background   : center center no-repeat;
+      background-size    : cover;
+      background-repeat  : no-repeat;
+      background-position: center;
+
       width        : 80px;
       height       : 80px;
       border-radius: 50%;
@@ -18,7 +21,8 @@
       .up {
         font-weight: 600;
       }
-      .down{
+
+      .down {
         text-align: justify;
       }
     }
