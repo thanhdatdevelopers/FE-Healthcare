@@ -39,7 +39,7 @@
             "manage-schedule": "Manage Doctor's Schedule"
         }
     },
-    "manage-user" : {
+    "manage-user": {
         "add": "Add new user",
         "email": "Email",
         "password": "Password",
@@ -54,7 +54,7 @@
         "save": "Save user",
         "edit": "Save edit"
     },
-    "homepage" : {
+    "homepage": {
         "out-standing-doctor": "Doctor featured last week",
         "more-info": "More Infor"
     },
@@ -66,7 +66,7 @@
     },
     "patient": {
         "detail-doctor": {
-            "schedule" : "Schedule",
+            "schedule": "Schedule",
             "no-schedule": "Doctor do not have scheduled appointments this time, please choose another time",
             "choose": "Choose ",
             "book-free": " and Book Free"
@@ -77,6 +77,20 @@
             "detail": "See detail",
             "payment": "The patient can pay the cost in the form of: ",
             "hide-price": "Hide price list"
+        },
+        "booking-modal": {
+            "title": "Information for scheduling medical examination",
+            "fullName": "Full name",
+            "phoneNumber": "Phone number",
+            "email": "Email address",
+            "address": "Contact address",
+            "reason": "Reason for examination",
+            "birthday": "Date of birth",
+            "gender": "Gender",
+            "btnConfirm": "Confirm",
+            "btnCancel": "Cancel",
+            "priceBooking": "Free booking",
+            "price": "Examination price"
         }
     },
     "admin": {
