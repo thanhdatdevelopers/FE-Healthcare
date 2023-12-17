@@ -138,7 +138,7 @@ class BookingModal extends Component {
       let name = language === LANGUAGES.VI ?
         `${dataTime.doctorData.lastName} ${dataTime.doctorData.firstName}`
         :
-        `${dataTime.doctorData.firstName} ${dataTime.doctorData.lastName}`        
+        `${dataTime.doctorData.firstName} ${dataTime.doctorData.lastName}`
       return name
     }
     return ''
@@ -173,6 +173,8 @@ class BookingModal extends Component {
                 doctorId={doctorId}
                 isShowDescriptionDoctor={false}
                 dataTime={dataTime}
+                isShowLinkDetail={false}
+                isShowPrice={true}
               />
             </div>
             {/* <div className='price'>
