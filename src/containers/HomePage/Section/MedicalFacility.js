@@ -58,10 +58,6 @@ class MedicalFacility extends Component {
                                 })
 
                             }
-                            <div className='section-customize'>
-                                <div className="bg-image section-medical-facility" />
-                                <div>Bệnh viện Hữu nghị Việt Đức</div>
-                            </div>
                         </Slider>
                     </div>
                 </div>

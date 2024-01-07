@@ -46,7 +46,7 @@ class DetailSpecialty extends Component {
         let dataProvince = resProvince.data
         if (dataProvince && dataProvince.length > 0) {
           dataProvince.unshift({
-            createAt: null,
+            createdAt: null,
             keyMap: "ALL",
             type: "PROVINCE",
             valueEn: "ALL",

@@ -7,7 +7,6 @@ import { toast } from 'react-toastify';
 import moment from 'moment';
 import { CommonUtils } from '../../../utils';
 
-
 class RemedyModal extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +25,7 @@ class RemedyModal extends Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    if (this.props.language !== prevProps.language) {
+    if (prevProps.dataModal !== this.props.dataModal) {
       this.setState({
         email: this.props.dataModal.email
       })
@@ -66,25 +65,27 @@ class RemedyModal extends Component {
         <div className='modal-header'>
           <h5 className='modal-title'>Gui hoa don kham benh thanh cong</h5>
           <button type='button' className='close' aria-label='Close' onClick={closeRemedyModal}>
-            <span aria-hidden>X</span>
+            <span aria-hidden="true">X</span>
           </button>
         </div>
         <ModalBody>
-          <div className='col-6 form-group'>
-            <label>Email benh nhan</label>
-            <input className='form-control' type='email' value={this.state.email}
-              onChange={(event) => this.handleOnChangeEmail(event)}
-            />
-          </div>
-          <div className='col-6 form-group'>
-            <label>File don thuoc</label>
-            <input className='form-control' type='file'
-              onChange={(event) => this.handleOnChangeImage(event)}
-            />
+          <div className='row'>
+            <div className='col-6 form-group'>
+              <label>Email benh nhan</label>
+              <input className='form-control' type='email' value={this.state.email}
+                onChange={(event) => this.handleOnChangeEmail(event)}
+              />
+            </div>
+            <div className='col-6 form-group'>
+              <label>File don thuoc</label>
+              <input className='form-control-file' type='file'
+                onChange={(event) => this.handleOnChangeImage(event)}
+              />
+            </div>
           </div>
         </ModalBody>
         <ModalFooter>
-          <Button color='primary' onClick={()=>this.handleSendRemedy()}>Send</Button>
+          <Button color='primary' onClick={() => this.handleSendRemedy()}>Send</Button>
           <Button color='secondary' onClick={closeRemedyModal}>Cancel</Button>
         </ModalFooter>
       </Modal>

@@ -4,7 +4,7 @@ import './ManageSpecialty.scss'
 import MarkdownIt from 'markdown-it';
 import MdEditor from 'react-markdown-editor-lite'
 import { CommonUtils } from '../../../utils';
-import createNewSpecialty from '../../../services/userService'
+import {createNewSpecialty} from '../../../services/userService'
 import { toast } from 'react-toastify';
 
 const mdParser = new MarkdownIt(/* Markdown-it options */);
@@ -20,7 +20,7 @@ class ManageSpecialty extends Component {
     }
   }
 
-  componentDidMount() {
+  async componentDidMount() {
 
   }
 
@@ -86,7 +86,7 @@ class ManageSpecialty extends Component {
 
           <div className='col-6 form-group'>
             <label>Anh chuyen khoa</label>
-            <input className='form-control' type='file'
+            <input className='form-control-file' type='file'
               onChange={(event) => this.handleOnChangeImage(event)}
             />
           </div>

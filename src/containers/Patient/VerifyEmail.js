@@ -5,7 +5,7 @@ import { postVerifyBookingAppoinment } from '../../services/userService';
 import HomeHeader from '../HomePage/HomeHeader';
 import './VerifyEmail.scss';
 
-class DefaultClass extends Component {
+class VerifyEmail extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,7 +24,7 @@ class DefaultClass extends Component {
         doctorId: doctorId
       })
 
-      if (res && res.errCode) {
+      if (res && res.errCode === 0) {
         this.setState({
           statusVerify: true,
           errCode: res.errCode
@@ -78,4 +78,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(DefaultClass);
+export default connect(mapStateToProps, mapDispatchToProps)(VerifyEmail);

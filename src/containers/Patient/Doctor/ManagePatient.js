@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { FormattedMessage } from 'react-intl';
 import './ManagePatient.scss';
 import DatePicker from '../../../components/Input/DatePicker';
-import { getAllPatientForDoctor } from '../../../services/userService';
+import { getAllPatientForDoctor, postSendRemedy } from '../../../services/userService';
 import moment from 'moment';
 import { LANGUAGES } from '../../../utils'
 import RemedyModal from './RemedyModal'
@@ -119,7 +119,7 @@ class ManagePatient extends Component {
         >
           <div className='manage-patient-container'>
             <div className='m-p-title'>
-              Quan ly benh nhan
+              Quan ly benh nhan kham benh
             </div>
             <div className='manage-patient-body row'>
               <div className='col-4 form-group'>
@@ -150,17 +150,14 @@ class ManagePatient extends Component {
                         return (
                           <tr key={index}>
                             <td>{index + 1}</td>
-                            <td>{item.timeTypeDataPatient.valueVi}</td>
+                            <td>{time}</td>
                             <td>{item.patientData.firstName}</td>
                             <td>{item.patientData.address}</td>
-                            <td>{item.patientData.genderData.valueVi}</td>
+                            <td>{gender}</td>
                             <td>
                               <button className='mp-btn-confirm'
-                                onClick={() => this.handleBtnConfirm()}
+                                onClick={() => this.handleBtnConfirm(item)}
                               >Xac nhan</button>
-                              {/* <button className='mp-btn-remedy'
-                                onClick={() => this.handleBtnRemedy()}
-                              >Gui hoa don</button> */}
                             </td>
                           </tr>
                         )
@@ -176,7 +173,7 @@ class ManagePatient extends Component {
             </div>
           </div>
           <RemedyModal
-            isOpenRemedyModal={isOpenRemedyModal}
+            isOpenModal={isOpenRemedyModal}
             dataModal={dataModal}
             closeRemedyModal={this.closeRemedyModal}
             sendRemedy={this.sendRemedy}

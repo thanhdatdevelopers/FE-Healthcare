@@ -29,6 +29,7 @@ class ManageDoctor extends Component {
       listProvince: [],
       listClinic: [],
       listSpecialty: [],
+
       selectedPrice: '',
       selectedPayment: '',
       selectedProvince: '',
@@ -117,14 +118,14 @@ class ManageDoctor extends Component {
       let dataSelectPayment = this.buildDataInputSelect(resPayment, 'PAYMENT')
       let dataSelectProvince = this.buildDataInputSelect(resProvince, 'PROVINCE')
       let dataSelectSpecialty = this.buildDataInputSelect(resSpecialty, 'SPECIALTY')
-      let dataSelectclinic = this.buildDataInputSelect(resClinic, 'CLINIC')
+      let dataSelectClinic = this.buildDataInputSelect(resClinic, 'CLINIC')
 
       this.setState({
         listPrice: dataSelectPrice,
         listPayment: dataSelectPayment,
         listProvince: dataSelectProvince,
         listSpecialty: dataSelectSpecialty,
-        listClinic: dataSelectclinic,
+        listClinic: dataSelectClinic,
       })
     }
 
@@ -179,7 +180,7 @@ class ManageDoctor extends Component {
     if (res && res.errCode === 0 && res.data && res.data.Markdown) {
       let markdown = res.data.Markdown;
       let addressClinic = '', nameClinic = '', note = '',
-        paymentId = '', priceId = '', provinceId = '', specialtyId, clinicId = '',
+        paymentId = '', priceId = '', provinceId = '', specialtyId = '', clinicId = '',
         selectedPayment = '', selectedPrice = '', selectedProvince = '', selectedClinic = '',
         selectedSpecialty = ''
 

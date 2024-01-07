@@ -62,11 +62,11 @@ class DetailClinic extends Component {
         <div className='detail-specialty-body'>
           <div className='description-specialty'>
             {
-              dataDetailSpecialty && !_.isEmpty(dataDetailSpecialty)
+              dataDetailClinic && !_.isEmpty(dataDetailClinic)
               &&
               <>
                 <div>{dataDetailClinic.name}</div>
-                <div dangerouslySetInnerHTML={{ __html: dataDetailSpecialty.descriptionHTML }}>
+                <div dangerouslySetInnerHTML={{ __html: dataDetailClinic.descriptionHTML }}>
 
                 </div>
               </>
@@ -110,7 +110,7 @@ class DetailClinic extends Component {
 
 const mapStateToProps = state => {
   return {
-    isLoggedIn: state.user.isLoggedIn
+    language: state.app.language
   };
 };
 
