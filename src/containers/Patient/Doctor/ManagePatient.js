@@ -26,7 +26,7 @@ class ManagePatient extends Component {
     this.getDataPatient()
   }
 
-  getDataPatient = async (user, formatedDate) => {
+  getDataPatient = async () => {
     let { user } = this.props
     let { currentDate } = this.state
     let formatedDate = new Date(currentDate).getTime()
@@ -50,7 +50,7 @@ class ManagePatient extends Component {
     })
   }
 
-  handleBtnConfirm = () => {
+  handleBtnConfirm = (item) => {
     let data = {
       doctorId: item.doctorId,
       patientId: item.patientId,
