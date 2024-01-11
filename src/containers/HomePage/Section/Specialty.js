@@ -40,8 +40,7 @@ class Specialty extends Component {
                             <FormattedMessage id="homepage.specialty-popular" />
                         </span>
                         <button className='btn-section'>
-                            <FormattedMessage id="homepage.more-infor" />
-                            Xem thêm
+                            <FormattedMessage id="homepage.more-info" />
                         </button>
                     </div>
                     <div className='section-body'>

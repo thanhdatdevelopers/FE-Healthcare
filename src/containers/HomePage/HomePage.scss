@@ -91,7 +91,7 @@
 }
 
 .section-share {
-  height: 330px;
+  height: 360px;
 
   .section-container {
     margin        : 0 100px;
@@ -100,7 +100,7 @@
 
     .section-header {
       height       : 60px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       padding-top  : 30px;
 
       .title-section {
@@ -140,7 +140,6 @@
     cursor : pointer;
 
     .customize-border {
-      border : 1px solid orange;
       padding: 20px;
     }
   }
@@ -174,12 +173,12 @@
     }
 
     .content-right {
+      font-size: 15px;
       width: 40%;
 
       p {
         text-align : justify;
         font-style : italic;
-        padding-top: 15px;
       }
     }
   }

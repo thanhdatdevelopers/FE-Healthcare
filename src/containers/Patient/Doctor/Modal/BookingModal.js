@@ -9,7 +9,7 @@ import DatePicker from '../../../../components/Input/DatePicker'
 import * as actions from '../../../../store/actions'
 import { LANGUAGES } from '../../../../utils'
 import Select from 'react-select';
-import { postPatientBookingAppoinment } from '../../../../services/userService';
+import { postPatientBookAppointment } from '../../../../services/userService';
 import { toast } from 'react-toastify';
 import moment from 'moment';
 
@@ -116,13 +116,13 @@ class BookingModal extends Component {
     }
     return ''
   }
-  
+
   handleConfirmBooking = async () => {
     let date = new Date(this.state.birthday).getTime();
     let timeString = this.buildTimeBooking(this.props.dataTime)
     let doctorName = this.buildDoctorName(this.props.dataTime)
 
-    let res = await postPatientBookingAppoinment({
+    let res = await postPatientBookAppointment({
       fullName: this.state.fullName,
       phoneNumber: this.state.phoneNumber,
       email: this.state.email,
@@ -178,7 +178,7 @@ class BookingModal extends Component {
                 isShowPrice={true}
               />
             </div>
-            
+
             <div className='row'>
               <div className='col-6 form-group'>
                 <label>

@@ -119,11 +119,13 @@ class ManagePatient extends Component {
         >
           <div className='manage-patient-container'>
             <div className='m-p-title'>
-              Quan ly benh nhan kham benh
+              <FormattedMessage id="patient.manage-patient.name-manage" />
             </div>
             <div className='manage-patient-body row'>
               <div className='col-4 form-group'>
-                <label>Chon ngay kham</label>
+                <label>
+                  <FormattedMessage id="patient.manage-patient.date" />
+                </label>
                 <DatePicker
                   onChange={this.handleOnChangeDatePicker}
                   className='form-control'
@@ -134,12 +136,12 @@ class ManagePatient extends Component {
                 <table style={{ width: '100%' }}>
                   <tbody>
                     <tr>
-                      <th>STT</th>
-                      <th>Thoi gian</th>
-                      <th>Ho ten</th>
-                      <th>Dia chi</th>
-                      <th>Gioi tinh</th>
-                      <th>Action</th>
+                      <th>NUMBER ORDER</th>
+                      <th>TIME</th>
+                      <th>NAME</th>
+                      <th>ADDRESS</th>
+                      <th>GENDER</th>
+                      <th>ACTIONS</th>
                     </tr>
                     {dataPatient && dataPatient.length > 0 ?
                       dataPatient.map((item, index) => {
@@ -157,7 +159,7 @@ class ManagePatient extends Component {
                             <td>
                               <button className='mp-btn-confirm'
                                 onClick={() => this.handleBtnConfirm(item)}
-                              >Xac nhan</button>
+                              >Xác Nhận</button>
                             </td>
                           </tr>
                         )

@@ -80,7 +80,7 @@ class UserManage extends Component {
         }
     }
 
-    handleEditUser =  (user) => {
+    handleEditUser = (user) => {
         console.log('edit user', user)
         this.setState({
             isOpenModalEditUser: true,
@@ -91,14 +91,14 @@ class UserManage extends Component {
     doEditUser = async (user) => {
         try {
             let res = await editUserService(user)
-            if (res && res.errCode===0) {
+            if (res && res.errCode === 0) {
                 this.setState({
-                    isOpenModalEditUser:false
+                    isOpenModalEditUser: false
                 })
 
                 await this.getAllUserFromReact()
             }
-            else{
+            else {
                 alert(res.errCode)
             }
         } catch (e) {
@@ -132,16 +132,18 @@ class UserManage extends Component {
                         isOpen={this.state.isOpenModalEditUser}
                         toggleFromParent={this.toggleUserEditModal}
                         currentUser={this.state.userEdit}
-                        editUser = {this.doEditUser}
+                        editUser={this.doEditUser}
                     />
                 }
-                <div className='title text-center'>Manage Users Reactjs</div>
-                <div className='mx-1'>
+                <div className='title text-center pb-4'>
+                    <FormattedMessage id="menu.admin.user-manage" />
+                </div>
+                {/* <div className='mx-1'>
                     <button
                         className='btn btn-primary px-3'
                         onClick={() => this.handleAddNewUser()}
                     ><i className="fas fa-plus"></i> Add new Users </button>
-                </div>
+                </div> */}
                 <div className='users-table mt-3 mx-1'>
                     <table id="customers">
                         <tbody>
@@ -150,7 +152,7 @@ class UserManage extends Component {
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Address</th>
-                                <th>Actions</th>
+                                {/* <th>Actions</th> */}
                             </tr>
                             {
                                 arrUsers && arrUsers.map((item, index) => {
@@ -160,16 +162,16 @@ class UserManage extends Component {
                                             <td>{item.firstName}</td>
                                             <td>{item.lastName}</td>
                                             <td>{item.address}</td>
-                                            <td>
-                                                <button
+                                            {/* <td> */}
+                                            {/* <button
                                                     className='btn-edit'
                                                     onClick={() => this.handleEditUser(item)}
                                                 ><i className="fas fa-pencil-alt"></i></button>
                                                 <button
                                                     className='btn-delete'
                                                     onClick={() => this.handleDeleteUser(item)}
-                                                ><i className="fas fa-trash"></i></button>
-                                            </td>
+                                                ><i className="fas fa-trash"></i></button> */}
+                                            {/* </td> */}
                                         </tr>
                                     )
                                 })

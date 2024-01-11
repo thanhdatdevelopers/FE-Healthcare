@@ -53,7 +53,7 @@ class ProfileDoctor extends Component {
       let date = language === LANGUAGES.VI ?
         moment.unix(+dataTime.date / 1000).format('dddd - DD/MM/YYYY')
         :
-        moment.unix(+dataTime.date / 1000).locale('en').format('dddd - MM/DD/YYYY')
+        moment.unix(+dataTime.date / 1000).locale('en').format('ddd - MM/DD/YYYY')
 
       return (
         <>
@@ -80,28 +80,6 @@ class ProfileDoctor extends Component {
 
     return (
       <div className='profile-doctor-container'>
-        {/* <div className='intro-doctor'>
-          <div
-            className='content-left'
-            style={{ backgroundImage: `url(${dataProfile && dataProfile.image ? dataProfile.image : ''})` }}
-          >
-          </div>
-          <div className='content-right'>
-            <div className='up'>
-              {language === LANGUAGES.VI ? nameVi : nameEn}
-            </div>
-            <div className='down'>
-              {dataProfile && dataProfile.Markdown
-                && dataProfile.Markdown.description
-                &&
-                <span>
-                  {dataProfile.Markdown.description}
-                </span>
-              }
-            </div>
-          </div>
-        </div> */}
-
         <div className='intro-doctor'>
           <div className='content-left'
             style={{ backgroundImage: `url(${dataProfile && dataProfile.image ? dataProfile.image : ''})` }}>
@@ -132,7 +110,7 @@ class ProfileDoctor extends Component {
         {isShowLinkDetail === true &&
           <div className='view-detail-doctor'
           >
-            <Link to={`/detail-doctor/${doctorId}`}>Xem them</Link>
+            <Link to={`/detail-doctor/${doctorId}`}>Xem thêm</Link>
           </div>
         }
 

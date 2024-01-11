@@ -23,25 +23,34 @@
     },
     "menu": {
         "admin": {
-            "manage-user": "Users",
-            "manage-doctor": "Manage doctors",
-            "manage-admin": "Manage admin",
-            "crud": "CRUD user",
-            "crud-redux": "CRUD redux",
-            "clinic": "Clinic",
-            "manage-clinic": "Manage Clinic",
-            "specialty": "Specialty",
-            "manage-specialty": "Manage specialty",
-            "handbook": "Handbook",
-            "manage-handbook": "Manage handbook"
+            "manage-user": "USER",
+            "manage-doctor": "Doctor Management",
+            "manage-admin": "Manage Admin",
+            "crud": "User Management",
+            "crud-redux": "User Details",
+            "clinic": "CLINICAL",
+            "manage-clinic": "Clinic Management",
+            "specialty": "SPECIALTY",
+            "manage-specialty": "Specialty Management",
+            "handbook": "HANDBOOK",
+            "manage-handbook": "Management Handbook",
+            "manage-redux": "USER DETAILS",
+            "user-manage": "USER INFORMATION",
+            "manage-specialtys": "MANAGE SPECIALTY",
+            "name-specialty": "Clinic Name",
+            "image-speciality": "Clinic Image"
         },
         "doctor": {
-            "manage-schedule": "Manage Doctor's Schedule",
-            "manage-patient": "Manage Patient's Schedule"
+            "manage-schedule": "Manage Clinic Plan",
+            "manage-patient": "Manage Patient Examination Schedule",
+            "manage-clinic": "Clinic Management",
+            "name-clinic": "Clinic Name",
+            "image-clinic": "Image Clinic",
+            "address-clinic": "Clinic Address"
         }
     },
     "manage-user": {
-        "add": "Add new user",
+        "add": "ADD NEW USER",
         "email": "Email",
         "password": "Password",
         "firstname": "First Name",
@@ -56,9 +65,15 @@
         "edit": "Save edit"
     },
     "homepage": {
-        "out-standing-doctor": "Doctor featured last week",
+        "out-standing-doctor": "Outstanding Doctor",
         "more-info": "More Infor",
-        "specialty-popular": "Popular specialty"
+        "specialty-popular": "Popular Specialty",
+        "handbook": "Handbook",
+        "out-standing": "Outstanding Medical Facilities",
+        "social-media": "What does the media say about BOOKINGCARE ?",
+        "text-media1": "In the field of health care, there have been many solutions to support patients in different directions. There are applications that provide information for patients to refer to; there are places that focus on the medical field. family doctor; offers solutions for home testing; and has a platform to help patients ask and answer questions from doctors. However, these are not solutions that help patients easily access medical examinations and solutions. solve the problem of overcrowding in hospitals.",
+        "text-media2": "BookingCare is a platform that focuses on booking specialized examinations, connecting patients with doctors, medical facilities and helping patients' medical examination experience be better and more effective. time, contributing to solving the problem of overcrowding in hospitals today.",
+        "text-media3": "From there, the patient's medical examination process is supported and more effective than the traditional medical examination method, saving time and money, helping patients meet doctors and treatment methods. method appropriate to your medical condition."
     },
     "manage-schedule": {
         "title": "Manage doctor examination plans",
@@ -93,6 +108,10 @@
             "btnCancel": "Cancel",
             "priceBooking": "Free booking",
             "price": "Examination price"
+        },
+        "manage-patient": {
+            "date": "Select examination date",
+            "name-manage": "MEDICAL PATIENT MANAGEMENT"
         }
     },
     "admin": {

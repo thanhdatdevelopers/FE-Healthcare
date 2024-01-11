@@ -63,7 +63,7 @@ class RemedyModal extends Component {
         centered
       >
         <div className='modal-header'>
-          <h5 className='modal-title'>Gui hoa don kham benh thanh cong</h5>
+          <h5 className='modal-title'>Gửi hóa đơn khám bệnh thành công</h5>
           <button type='button' className='close' aria-label='Close' onClick={closeRemedyModal}>
             <span aria-hidden="true">X</span>
           </button>
@@ -71,13 +71,13 @@ class RemedyModal extends Component {
         <ModalBody>
           <div className='row'>
             <div className='col-6 form-group'>
-              <label>Email benh nhan</label>
+              <label>Email bệnh nhân</label>
               <input className='form-control' type='email' value={this.state.email}
                 onChange={(event) => this.handleOnChangeEmail(event)}
               />
             </div>
             <div className='col-6 form-group'>
-              <label>File don thuoc</label>
+              <label>Chọn file đơn thuốc</label>
               <input className='form-control-file' type='file'
                 onChange={(event) => this.handleOnChangeImage(event)}
               />

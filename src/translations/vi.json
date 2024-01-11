@@ -23,25 +23,34 @@
     },
     "menu": {
         "admin": {
-            "manage-user": "Nguoi dung",
-            "manage-doctor": "Quan ly bac si",
-            "manage-admin": "Quan ly admin",
-            "crud": "CRUD user",
-            "crud-redux": "CRUD redux",
-            "clinic": "Phong kham",
-            "manage-clinic": "Quan ly Phong kham",
-            "specialty": "Chuyen Khoa",
-            "manage-specialty": "Quan ly Chuyen Khoa",
-            "handbook": "Cam Nang",
-            "manage-handbook": "Quan ly Cam Nang"
+            "manage-user": "USER",
+            "manage-doctor": "Quản Lý Bác Sĩ",
+            "manage-admin": "Quản Lý Admin",
+            "crud": "Quản Lý User",
+            "crud-redux": "Chi Tiết User",
+            "clinic": "PHÒNG KHÁM",
+            "manage-clinic": "Quản Lý Phòng Khám",
+            "specialty": "CHUYÊN KHOA",
+            "manage-specialty": "Quản Lý Chuyên Khoa",
+            "handbook": "CẨM NANG",
+            "manage-handbook": "Quản Lý Cẩm Nang",
+            "manage-redux": "CHI TIẾT USER",
+            "user-manage": "THÔNG TIN USER",
+            "manage-specialtys": "QUẢN LÝ CHUYÊN KHOA",
+            "name-specialty": "Tên Phòng Khám",
+            "image-speciality": "Ảnh Phòng Khám"
         },
         "doctor": {
-            "manage-schedule": "Quản lý kế hoạch khám bệnh",
-            "manage-patient": "Quản lý lịch bệnh nhân khám bệnh"
+            "manage-schedule": "Quản Lý Kế Hoạch Khám Bệnh",
+            "manage-patient": "Quản Lý Lịch Khám Bệnh Nhân",
+            "manage-clinic": "Quản Lý Phòng Khám",
+            "name-clinic": "Tên Phòng Khám",
+            "image-clinic": "Ảnh Phòng Khám",
+            "address-clinic": "Địa Chỉ Phòng Khám"
         }
     },
-    "manage-user" : {
-        "add": "Thêm mới người dùng",
+    "manage-user": {
+        "add": "THÔNG TIN NGƯỜI DÙNG",
         "email": "Email",
         "password": "Mật khẩu",
         "firstname": "First Name",
@@ -55,10 +64,16 @@
         "save": "Lưu người dùng",
         "edit": "Lưu thay đổi"
     },
-    "homepage" : {
-        "out-standing-doctor": "Bác sĩ nổi bật tuần qua",
-        "more-info": "Xem thêm",
-        "specialty-popular": "Chuyên khoa phổ biển"
+    "homepage": {
+        "out-standing-doctor": "Bác Sĩ Nổi Bật",
+        "more-info": "Xem Thêm",
+        "specialty-popular": "Chuyên Khoa Phổ Biển",
+        "handbook": "Cẩm Nang",
+        "out-standing": "Cơ Sở Y Tế Nổi Bật",
+        "social-media": "Truyền thông nói gì về BOOKING CARE ?",
+        "text-media1": "Trong lĩnh vực chăm sóc sức khỏe đã có nhiều giải pháp để hỗ trợ người bệnh theo các hướng khác nhau. Có ứng dụng cung cấp thông tin để người bệnh tham khảo; có nơi tập trung vào mảng bác sĩ gia đình; đưa ra giải pháp về xét nghiệm tại nhà; và có cả nền tảng giúp người bệnh hỏi đáp bác sĩ. Tuy nhiên, đó chưa phải là những giải pháp giúp người bệnh dễ dàng tiếp cận với việc đi khám và giải quyết được vấn đề quá tải tại các bệnh viện.",
+        "text-media2": "BookingCare là nền tảng tập trung vào việc đặt khám chuyên khoa, kết nối bệnh nhân với bác sĩ, cơ sở y tế và giúp trải nghiệm đi khám của người bệnh được tốt hơn, hiệu quả hơn. Đồng thời, góp phần giải quyết vấn đề quá tải của các bệnh viện hiện nay.",
+        "text-media3": "Từ đó, quá trình đi khám của người bệnh được hỗ trợ, hiệu quả hơn so với cách đi khám truyền thống, tiết kiệm thời gian, chi phí, giúp cho người bệnh gặp được bác sĩ và phương pháp phù hợp với tình hình bệnh tật của mình."
     },
     "manage-schedule": {
         "title": "Quản lý kế hoạch khám bệnh bác sĩ",
@@ -68,7 +83,7 @@
     },
     "patient": {
         "detail-doctor": {
-            "schedule" : "Lịch khám",
+            "schedule": "Lịch khám",
             "no-schedule": "Bác sĩ không có lịch hẹn trong thời gian nay, vui lòng chon thời gian khác",
             "choose": "Chọn ",
             "book-free": " và Đặt Miễn phí"
@@ -93,13 +108,17 @@
             "btnCancel": "Hủy",
             "priceBooking": "Miễn phí đặt lịch",
             "price": "Giá khám"
+        },
+        "manage-patient": {
+            "date": "Chọn ngày khám",
+            "name-manage": "QUẢN LÝ BỆNH NHÂN KHÁM BỆNH"
         }
     },
     "admin": {
         "manage-doctor": {
             "title": "Tạo thêm thông tin doctor",
             "select-doctor": "Chọn bác sĩ",
-            "intro": "Thông tin giới thiệu", 
+            "intro": "Thông tin giới thiệu",
             "save": "Lưu thông tin",
             "add": "Tạo thông tin",
             "price": "Giá khám bệnh",

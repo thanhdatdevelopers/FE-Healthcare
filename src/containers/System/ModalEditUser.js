@@ -135,7 +135,7 @@ class ModalEditUser extends Component {
             onClick={() => { this.handleSaveUser() }}
           >
             Save Changes
-          </Button>{' '}
+          </Button>
           <Button
             color="secondary"
             className='px-3'

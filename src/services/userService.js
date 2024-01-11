@@ -14,7 +14,6 @@ const createNewUserService = (data) => {
 }
 
 const deleteUserService = (userId) => {
-  // return axios.delete('/api/delete-user', stringify)
   return axios.delete('/api/delete-user', {
     data: {
       id: userId
@@ -62,11 +61,11 @@ const getProfileDoctorById = (doctorId) => {
   return axios.get(`/api/get-profile-doctor-by-id?doctorId=${doctorId}`)
 }
 
-const postPatientBookingAppoinment = (data) => {
+const postPatientBookAppointment = (data) => {
   return axios.post(`/api/patient-book-appointment`, data)
 }
 
-const postVerifyBookingAppoinment = (data) => {
+const postVerifyBookAppointment = (data) => {
   return axios.post(`/api/verify-book-appointment`, data)
 }
 
@@ -117,8 +116,8 @@ export {
   getScheduleDoctorByDate,
   getExtraInforDoctorById,
   getProfileDoctorById,
-  postPatientBookingAppoinment,
-  postVerifyBookingAppoinment,
+  postPatientBookAppointment,
+  postVerifyBookAppointment,
   createNewSpecialty,
   getAllSpecialty,
   getAllDetailSpecialtyById,

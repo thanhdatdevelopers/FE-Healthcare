@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { FormattedMessage } from 'react-intl';
-import { postVerifyBookingAppoinment } from '../../services/userService';
+import { postVerifyBookAppointment } from '../../services/userService';
 import HomeHeader from '../HomePage/HomeHeader';
 import './VerifyEmail.scss';
 
@@ -19,7 +19,7 @@ class VerifyEmail extends Component {
       let urlParams = new URLSearchParams(this.props.location.search)
       let token = urlParams.get('token')
       let doctorId = urlParams.get('doctorId')
-      let res = await postVerifyBookingAppoinment({
+      let res = await postVerifyBookAppointment({
         token: token,
         doctorId: doctorId
       })
@@ -55,8 +55,9 @@ class VerifyEmail extends Component {
             :
             <div>
               {+errCode === 0 ?
-                <div className='infor-booking'>Xac nhan lich hen</div> :
-                <div className='infor-booking'>Lich hen khong ton tai</div>
+                <div className='infor-booking'>Xác nhận lịch hẹn thành công !</div> 
+                :
+                <div className='infor-booking'>Lịch hẹn không tồn tại hoặc đã được xác nhận !</div>
               }
             </div>
           }

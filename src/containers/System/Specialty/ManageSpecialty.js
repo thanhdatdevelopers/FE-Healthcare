@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
+import { FormattedMessage } from 'react-intl';
 import './ManageSpecialty.scss'
 import MarkdownIt from 'markdown-it';
 import MdEditor from 'react-markdown-editor-lite'
 import { CommonUtils } from '../../../utils';
-import {createNewSpecialty} from '../../../services/userService'
+import { createNewSpecialty } from '../../../services/userService'
 import { toast } from 'react-toastify';
 
 const mdParser = new MarkdownIt(/* Markdown-it options */);
@@ -74,18 +75,24 @@ class ManageSpecialty extends Component {
   render() {
     return (
       <div className='manage-specialty-container'>
-        <div className='ms-title'>Quan ly chuyen khoa</div>
+        <div className='ms-title'>
+          <FormattedMessage id="menu.admin.manage-specialtys" />
+        </div>
 
         <div className='add-new-specialty-row'>
           <div className='col-6 form-group'>
-            <label>Ten chuyen khoa</label>
+            <label>
+              <FormattedMessage id="menu.admin.name-specialty" />
+            </label>
             <input className='form-control' type='text' value={this.state.name}
               onChange={(event) => this.handleOnChangeInput(event, 'name')}
             />
           </div>
 
           <div className='col-6 form-group'>
-            <label>Anh chuyen khoa</label>
+            <label>
+              <FormattedMessage id="menu.admin.image-speciality" />
+            </label>
             <input className='form-control-file' type='file'
               onChange={(event) => this.handleOnChangeImage(event)}
             />

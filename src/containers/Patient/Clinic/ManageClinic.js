@@ -6,6 +6,7 @@ import MdEditor from 'react-markdown-editor-lite'
 import { CommonUtils } from '../../../utils';
 import { createNewClinic } from '../../../services/userService'
 import { toast } from 'react-toastify';
+import { FormattedMessage } from 'react-intl';
 
 const mdParser = new MarkdownIt(/* Markdown-it options */);
 
@@ -57,7 +58,7 @@ class ManageClinic extends Component {
     }
   }
 
-  handleSaveNewSpecialty = async () => {
+  handleSaveNewClinic = async () => {
     let res = await createNewClinic(this.state)
     if (res && res.errCode === 0) {
       toast.success('Add new specialty succeeds !')
@@ -76,25 +77,33 @@ class ManageClinic extends Component {
   render() {
     return (
       <div className='manage-specialty-container'>
-        <div className='ms-title'>Quan ly phòng khám</div>
+        <div className='ms-title'>
+          <FormattedMessage id="menu.admin.manage-clinic" />
+        </div>
 
         <div className='add-new-specialty-row'>
           <div className='col-6 form-group'>
-            <label>Ten phòng khám</label>
+            <label>
+              <FormattedMessage id="menu.doctor.name-clinic" />
+            </label>
             <input className='form-control' type='text' value={this.state.name}
               onChange={(event) => this.handleOnChangeInput(event, 'name')}
             />
           </div>
 
           <div className='col-6 form-group'>
-            <label>Anh phòng khám</label>
+            <label>
+              <FormattedMessage id="menu.doctor.image-clinic" />
+            </label>
             <input className='form-control-file' type='file'
               onChange={(event) => this.handleOnChangeImage(event)}
             />
           </div>
 
           <div className='col-6 form-group'>
-            <label>Địa chỉ phòng khám</label>
+            <label>
+              <FormattedMessage id="menu.doctor.address-clinic" />
+            </label>
             <input className='form-control' type='text' value={this.state.address}
               onChange={(event) => this.handleOnChangeInput(event, 'address')}
             />
@@ -111,7 +120,7 @@ class ManageClinic extends Component {
 
           <div className='col-12'>
             <button className='btn-save-specialty'
-              onClick={() => this.handleSaveNewSpecialty()}
+              onClick={() => this.handleSaveNewClinic()}
             >Save</button>
           </div>
 
